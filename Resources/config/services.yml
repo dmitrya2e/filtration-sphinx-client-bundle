@@ -1,0 +1,32 @@
+parameters:
+    da2e.filtration_sphinx_client.filter.text_filter_class: Da2e\FiltrationBundle\Filter\Filter\Sphinx\API\TextFilter
+    da2e.filtration_sphinx_client.filter.number_filter_class: Da2e\FiltrationBundle\Filter\Filter\Sphinx\API\NumberFilter
+    da2e.filtration_sphinx_client.filter.date_filter_class: Da2e\FiltrationBundle\Filter\Filter\Sphinx\API\DateFilter
+    da2e.filtration_sphinx_client.filter.choice_filter_class: Da2e\FiltrationBundle\Filter\Filter\Sphinx\API\ChoiceFilter
+    da2e.filtration_sphinx_client.filter.entity_filter_class: Da2e\FiltrationBundle\Filter\Filter\Sphinx\API\EntityFilter
+
+services:
+    da2e.filtration_sphinx_client.filter.text_filter:
+        class: %da2e.filtration.filter.text_filter_class%
+        tags:
+            - { name:  da2e.filtration.filter, alias: da2e_sphinx_client_text_filter }
+
+    da2e.filtration_sphinx_client.filter.number_filter:
+        class: %da2e.filtration.filter.number_filter_class%
+        tags:
+            - { name:  da2e.filtration.filter, alias: da2e_sphinx_client_number_filter }
+
+    da2e.filtration_sphinx_client.filter.date_filter:
+        class: %da2e.filtration.filter.date_filter_class%
+        tags:
+            - { name:  da2e.filtration.filter, alias: da2e_sphinx_client_date_filter }
+
+    da2e.filtration_sphinx_client.filter.choice_filter:
+        class: %da2e.filtration.filter.choice_filter_class%
+        tags:
+            - { name:  da2e.filtration.filter, alias: da2e_sphinx_client_choice_filter }
+
+    da2e.filtration_sphinx_client.filter.entity_filter:
+        class: %da2e.filtration.filter.entity_filter_class%
+        tags:
+            - { name:  da2e.filtration.filter, alias: da2e_sphinx_client_entity_filter }

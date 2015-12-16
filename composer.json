@@ -1,0 +1,26 @@
+{
+  "name": "dmitrya2e/filtration-sphinx-client-bundle",
+  "type": "filtration-sphinx-client-bundle",
+  "description": "FiltrationSphinxClientBundle ...",
+  "keywords": [
+    "filtration",
+    "sphinx",
+    "bundle",
+    "symfony"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dmitry Abrosimov",
+      "email": "abrosimovs@gmail.com"
+    }
+  ],
+  "require": {
+    "dmitrya2e/filtration-bundle": "v2.0.0-alpha"
+  },
+  "autoload": {
+    "psr-4": {
+      "Da2e\\FiltrationSphinxClientBundle\\": ""
+    }
+  }
+}

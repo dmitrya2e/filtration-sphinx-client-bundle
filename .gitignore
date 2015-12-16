@@ -1,0 +1,15 @@
+# misc
+.php_cs.cache
+.idea/
+.vagrant/
+.buildpath
+.project
+.settings/
+/behat.yml
+vendor
+phpunit.xml
+phpunit.phar
+composer.lock
+composer.phar
+
+!.gitkeep
